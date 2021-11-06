@@ -1,0 +1,39 @@
+{
+  "name": "desafioserverlesstodo",
+  "version": "1.0.0",
+  "description": "Serverless aws-nodejs-typescript template",
+  "main": "serverless.ts",
+  "scripts": {
+    "dev": "serverless offline",
+    "dynamo:start": "serverless dynamodb start",
+    "deploy": "serverless deploy -v"
+  },
+  "dependencies": {
+    "@middy/core": "^1.5.2",
+    "@middy/http-json-body-parser": "^1.5.2",
+    "copy-webpack-plugin": "^9.0.1",
+    "dayjs": "^1.10.7",
+    "serverless-appsync-plugin": "^1.12.0",
+    "serverless-iam-roles-per-function": "^3.2.0",
+    "serverless-pseudo-parameters": "^2.6.1",
+    "serverless-webpack": "^5.5.5",
+    "uuid": "^8.3.2",
+    "webpack": "^5.62.1",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "devDependencies": {
+    "@serverless/typescript": "^2.23.0",
+    "@types/aws-lambda": "^8.10.71",
+    "@types/node": "^14.14.25",
+    "@types/uuid": "^8.3.1",
+    "json-schema-to-ts": "^1.5.0",
+    "serverless": "^2.23.0",
+    "serverless-dynamodb-local": "^0.2.40",
+    "serverless-esbuild": "^1.17.1",
+    "serverless-offline": "^8.2.0",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^9.1.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.1.3"
+  }
+}
